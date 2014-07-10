@@ -1,0 +1,1 @@
+My personal dotfiles. Installation script copied from https://github.com/michaeljsmalley/dotfiles
