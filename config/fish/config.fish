@@ -21,4 +21,5 @@ git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Crese
 
 # DIGITAS Specific Aliases
 alias jmvc='cd ~/Developer/flag_enterprise_code/flag-ent-webapp/WebContent/jmvc/'
-alias bmh='cd /Users/wbutt/Developer/flag_bmh/bmh-webapp/src/main/ui/'
+alias bmh='cd /Users/wbutt/Developer/bmh/bmh-webapp/src/main/ui/'
+alias oldbmh='cd /Users/wbutt/Developer/bmh/bmh-webapp/src/main/ui/'
