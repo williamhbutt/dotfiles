@@ -193,3 +193,6 @@ let g:snips_trigger_key = '<C-Tab>'
 
 " Emmet
 let g:user_emmet_leader_key='<C-e>'
+
+noremap <S-l> gt
+noremap <S-h> gT
