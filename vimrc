@@ -6,6 +6,7 @@ filetype indent on
 :set ts=4
 :set shiftwidth=4
 set undofile
+set smarttab
 
 " AutoIndent
 set autoindent
@@ -14,6 +15,8 @@ set autoindent
 
 " Show row and column number
 :set ruler
+
+set backspace=indent,eol,start
 
 " Set up braces blinking
 set showmatch
@@ -196,3 +199,16 @@ let g:user_emmet_leader_key='<C-e>'
 
 noremap <S-l> gt
 noremap <S-h> gT
+
+" fontsize
+:set guifont=Bitstream\ Vera\ Sans\ Mono:h16
+
+" css colors:
+let g:cssColorVimDoNotMessMyUpdatetime = 1
+
+" Console log from insert mode; Puts focus inside parentheses
+imap cll console.log();<Esc>==f(a
+" Console log from visual mode on next line, puts visual selection inside parentheses
+vmap cll yocll<Esc>p
+" Console log from normal mode, inserted on next line with word your on inside parentheses
+nmap cll yiwocll<Esc>p
