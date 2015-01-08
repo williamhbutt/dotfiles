@@ -207,8 +207,8 @@ noremap <S-h> gT
 let g:cssColorVimDoNotMessMyUpdatetime = 1
 
 " Console log from insert mode; Puts focus inside parentheses
-imap cll console.log();<Esc>==f(a
+imap cll console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~');<Enter>console.log();<Enter>console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~');<Esc>==kf(a
 " Console log from visual mode on next line, puts visual selection inside parentheses
-vmap cll yocll<Esc>p
+vmap cll ocll<Esc>p
 " Console log from normal mode, inserted on next line with word your on inside parentheses
-nmap cll yiwocll<Esc>p
+nmap cll ocll
