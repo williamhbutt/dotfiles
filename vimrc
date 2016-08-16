@@ -30,7 +30,7 @@ set noswapfile
 
 " No annoying sound on errors
 set noerrorbells
-set novisualbell
+set visualbell
 set t_vb=
 set tm=500
 
@@ -161,6 +161,7 @@ execute pathogen#infect()
 syntax enable
 set background=dark
 colorscheme solarized
+let g:solarized_visibility = "low"
 
 " Nerd Tree
 map <C-n> :NERDTreeToggle<CR>
@@ -212,3 +213,18 @@ imap cll console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~');<Enter>
 vmap cll ocll<Esc>p
 " Console log from normal mode, inserted on next line with word your on inside parentheses
 nmap cll ocll
+
+au BufNewFile,BufRead *.groovy  setf groovy
+
+if did_filetype()
+    finish
+endif
+if getline(1) =~ '^#!.*[/\\]groovy\>'
+    setf groovy
+endif
+
+set showcmd
+set cursorline
+
+set hlsearch   " highlight search results
+set incsearch  " incremental search
