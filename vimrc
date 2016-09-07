@@ -226,5 +226,5 @@ endif
 set showcmd
 set cursorline
 
-set hlsearch   " highlight search results
+"set hlsearch   " highlight search results
 set incsearch  " incremental search
