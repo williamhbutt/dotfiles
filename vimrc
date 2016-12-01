@@ -228,3 +228,5 @@ set cursorline
 
 "set hlsearch   " highlight search results
 set incsearch  " incremental search
+
+au BufNewFile,BufRead *.tpl set filetype=html
